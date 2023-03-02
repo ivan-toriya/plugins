@@ -39,7 +39,9 @@ lint:
 
   ignore:
     - linters: [ALL]
-      paths: ["**/test_data/**"]
+      paths:
+        - "**/test_data/**"
+        - "**/test_data" # required for golanci-lint, which runs on directories
 
 actions:
   definitions:
